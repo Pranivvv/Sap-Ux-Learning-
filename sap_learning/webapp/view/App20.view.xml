@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="saplearning.saplearning.controller.App20"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App id="app">
+        <Page title="Registration Validation Form">
+            <VBox class="sapUiSmallMargin">
+                <Label text="Name"></Label>
+                <Input id="rName" type="Text" placeholder="Please Enter Your Name" class="sapUiSmallMarginTop" width="15rem"></Input>
+
+                <Label text="Surname"></Label>
+                <Input id="rSurname" type="Text" placeholder="Please Enter Your Surname" class="sapUiSmallMarginTop" width="15rem"></Input>
+
+                <Label text="Phone Number"></Label>
+                <Input id="rPhoneNumber" type="Number" placeholder="Please Enter Your Phone Number" class="sapUiSmallMarginTop" width="15rem"></Input>
+
+                <Label text="E-Mail ID"></Label>
+                <Input id="rEmail" type="Text" placeholder="Please Enter Your Email" class="sapUiSmallMarginTop" width="20rem"></Input>
+
+                <Label text="Address"></Label>
+                <TextArea id="rAddress" placeholder="Please Enter your Address" class="sapUiSmallMarginTop"></TextArea>
+
+                <Label text="Gender"></Label>
+                <RadioButtonGroup id="rSelectButtons"  selectedIndex="{/selectedIndex}" class="sapUiSmallMarginTop">
+                    <buttons>
+                        <RadioButton text="Male"></RadioButton>
+                        <RadioButton text="Female"></RadioButton>
+                    </buttons>
+                </RadioButtonGroup>
+
+                <Label text="Country"></Label>               
+                <Select
+                    width="10rem"
+                    class="sapUiSmallMarginTop"
+                    id="rCountry"
+                    selectedKey="{/selectedCountry}"
+                    items="{/countries}">
+                    <items>
+                    <core:Item key="{key}" text="{text}" />
+                    </items>
+                </Select>
+
+                <Button text="Submit" class="sapUiSmallMarginTop" type="Emphasized"></Button>
+            </VBox>
+        </Page>
+    </App>
+</mvc:View>

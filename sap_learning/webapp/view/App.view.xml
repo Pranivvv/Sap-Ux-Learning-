@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+        <Page title="Employee Details App">
+            <content>
+                <VBox class="sapUiSmallMargin">
+                    <Label text="Employee Name" />
+                    <Input
+                        id="empName"
+                        placeholder="Enter Employee Name" />
+                    <Label
+                        text="Employee ID"
+                        class="sapUiSmallMarginTop" />
+                    <Input
+                        id="empId"
+                        placeholder="Enter Employee ID" />
+                    <Button
+                        text="Display"
+                        press="onDisplay"
+                        class="sapUiSmallMarginTop" />
+                    <Text
+                        id="resultText"
+                        class="sapUiSmallMarginTop" />
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>

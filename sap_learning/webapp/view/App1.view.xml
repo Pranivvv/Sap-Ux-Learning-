@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox
+        class="sapUiSmallMargin"
+        justifyContent="Center"
+        alignItems="Center">
+
+        <Title text="Dynamic Button Text Binding" class="sapUiSmallMarginBottom" />
+
+        <Button
+            text="{/buttonText}"
+            type="Emphasized"
+            press="onButtonPress"
+            width="12rem" />
+
+    </VBox>
+</mvc:View>

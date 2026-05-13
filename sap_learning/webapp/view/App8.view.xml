@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App8"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+
+        <Title text="Checkbox Controls Visibility" class="sapUiSmallMarginBottom"/>
+
+        <CheckBox
+            text="Show Input Field"
+            selected="{/isVisible}"
+            select="onToggle" />
+
+        <Input
+            placeholder="I appear when checkbox is checked"
+            visible="{/isVisible}"
+            class="sapUiSmallMarginTop" />
+
+    </VBox>
+</mvc:View>

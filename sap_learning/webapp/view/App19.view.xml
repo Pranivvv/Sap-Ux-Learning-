@@ -1,0 +1,21 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App19"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <App >
+        <Page title="Currency Formatter">
+            <content>
+                <VBox class="sapUiSmallMargin">
+                    <Text
+                        id="currencyText"
+                        text="Amount will appear here" />
+
+                    <Button
+                        text="Show Amount"
+                        press=".onShowAmount" />
+                </VBox>
+            </content>
+    </Page>
+    </App>
+</mvc:View>

@@ -1,0 +1,17 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App12"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+
+        <Title text="ValueState Error Message" class="sapUiSmallMarginBottom"/>
+
+        <Input
+            id="inputField3"
+            value="{/value}"
+            liveChange="onLiveChange"
+            placeholder="Enter at least 5 characters" />
+
+    </VBox>
+</mvc:View>

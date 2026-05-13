@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App15"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+   <App >
+         <Page title="Busy Indicator on Button Click">
+            <content>
+                <VBox class="sapUiSmallMargin">
+                    <Button
+                        id="busyBtn"
+                        text="Submit"
+                        press=".onPressBusyButton" />
+                </VBox>
+            </content>
+    </Page>
+   </App>
+</mvc:View>

@@ -1,0 +1,17 @@
+<mvc:View
+    controllerName="saplearning.saplearning.controller.App4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+
+        <Title text="Uppercase Input" class="sapUiSmallMarginBottom"/>
+
+        <Input
+            id="inputField2"
+            value="{/inputText}"
+            liveChange="onLiveChange"
+            placeholder="Type here..." />
+
+    </VBox>
+</mvc:View>
