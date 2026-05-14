@@ -1,6 +1,14 @@
-<mvc:View controllerName="fragments.fragments.controller.View1"
+<mvc:View
+    controllerName="fragments.fragments.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+
+    <Page title="Fragment Example">
+        <content>
+            <Button
+                text="Open Fragment"
+                press="onOpenFragment" />
+        </content>
     </Page>
+
 </mvc:View>

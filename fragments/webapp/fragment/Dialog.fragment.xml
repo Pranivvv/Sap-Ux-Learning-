@@ -1,0 +1,36 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="myDialog"
+        title="Fragment Dialog">
+
+        <content>
+
+            <VBox id="vb1">
+
+                <Label
+                    id="lbl1"
+                    text="Employee Name"/>
+
+                <Input
+                    id="inp1"
+                    placeholder="Enter Name"/>
+
+            </VBox>
+
+        </content>
+
+        <beginButton>
+
+            <Button
+                id="btnClose"
+                text="Close"
+                press="onCloseDialog"/>
+
+        </beginButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>
