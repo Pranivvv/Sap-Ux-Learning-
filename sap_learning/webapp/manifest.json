@@ -89,7 +89,7 @@
       }
     },
     "rootView": {
-      "viewName": "saplearning.saplearning.view.App24",
+      "viewName": "saplearning.saplearning.view.App20",
       "type": "XML",
       "id": "App",
       "async": true
