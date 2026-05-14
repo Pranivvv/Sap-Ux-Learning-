@@ -1,0 +1,78 @@
+<mvc:View
+    controllerName="extendedcontrol.extendedcontrol.controller.SimpleDashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App >
+
+        <Page title="Simple Dashboard Tile">
+
+            <content>
+
+                <HBox
+                    justifyContent="Center"
+                    alignItems="Center"
+                    renderType="Bare">
+
+                    <!-- Users Tile -->
+                    <GenericTile
+                        class="sapUiSmallMargin"
+                        header="Total Users"
+                        subheader="Active Users">
+
+                        <tileContent>
+                            <TileContent>
+                                <content>
+                                    <NumericContent
+                                        value="{/users}"
+                                        valueColor="Good"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+
+                    </GenericTile>
+
+                    <!-- Orders Tile -->
+                    <GenericTile
+                        class="sapUiSmallMargin"
+                        header="Orders"
+                        subheader="Today's Orders">
+
+                        <tileContent>
+                            <TileContent>
+                                <content>
+                                    <NumericContent
+                                        value="{/orders}"
+                                        valueColor="Critical"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+
+                    </GenericTile>
+
+                    <!-- Revenue Tile -->
+                    <GenericTile
+                        class="sapUiSmallMargin"
+                        header="Revenue"
+                        subheader="Monthly Revenue">
+
+                        <tileContent>
+                            <TileContent>
+                                <content>
+                                    <NumericContent
+                                        value="{/revenue}"
+                                        scale="K"
+                                        valueColor="Good"/>
+                                </content>
+                            </TileContent>
+                        </tileContent>
+
+                    </GenericTile>
+
+                </HBox>
+
+            </content>
+
+        </Page>
+    </App>
+
+</mvc:View>

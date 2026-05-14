@@ -1,0 +1,44 @@
+<mvc:View
+    controllerName="extendedcontrol.extendedcontrol.controller.FileUpload"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified">
+    <App>
+
+        <pages>
+
+            <Page title="File Upload Basic Control">
+
+                <content>
+
+                    <VBox class="sapUiSmallMargin">
+
+                        <!-- File Upload Control -->
+                        <unified:FileUploader
+                            id="fileUploader"
+                            width="400px"
+                            placeholder="Choose a file"
+                            change="onFileChange" />
+
+                        <!-- Upload Button -->
+                        <Button
+                            text="Upload"
+                            type="Emphasized"
+                            press="onUpload"
+                            class="sapUiSmallMarginTop" />
+
+                        <!-- Text to Display File Name -->
+                        <Text
+                            id="txtFileName"
+                            text="No file selected"
+                            class="sapUiSmallMarginTop" />
+
+                    </VBox>
+
+                </content>
+
+            </Page>
+        </pages>
+    </App>
+
+</mvc:View>

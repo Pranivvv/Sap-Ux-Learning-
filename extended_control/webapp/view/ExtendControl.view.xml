@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="extendedcontrol.extendedcontrol.controller.ExtendControl"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="extendedcontrol.extendedcontrol.control">
+
+    <App>
+
+        <pages>
+
+            <Page title="Extended Button Control">
+
+                <content>
+
+                    <VBox class="sapUiSmallMargin">
+
+                        <custom:MyButton
+                            customText="Save"
+                            press="onPress" />
+
+                    </VBox>
+
+                </content>
+
+            </Page>
+
+        </pages>
+
+    </App>
+
+</mvc:View>
