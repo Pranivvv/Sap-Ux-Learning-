@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="odata.odata.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+
+        <pages>
+
+            <Page title="OData Model Example">
+
+                <content>
+
+                    <Table
+                        items="{/Employees}">
+
+                        <columns>
+
+                            <Column>
+                                <Text text="Employee ID" />
+                            </Column>
+
+                            <Column>
+                                <Text text="Name" />
+                            </Column>
+
+                            <Column>
+                                <Text text="Role" />
+                            </Column>
+
+                            <Column>
+                                <Text text="Location" />
+                            </Column>
+
+                        </columns>
+
+                        <items>
+
+                            <ColumnListItem>
+
+                                <cells>
+
+                                    <Text text="{EmpId}" />
+                                    <Text text="{Name}" />
+                                    <Text text="{Role}" />
+                                    <Text text="{Location}" />
+
+                                </cells>
+
+                            </ColumnListItem>
+
+                        </items>
+
+                    </Table>
+
+                </content>
+
+            </Page>
+
+        </pages>
+
+    </App>
+
+</mvc:View>
+

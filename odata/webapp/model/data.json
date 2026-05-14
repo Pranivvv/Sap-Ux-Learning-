@@ -1,0 +1,23 @@
+
+{
+  "Employees": [
+    {
+      "EmpId": "101",
+      "Name": "John",
+      "Role": "Developer",
+      "Location": "Bangalore"
+    },
+    {
+      "EmpId": "102",
+      "Name": "David",
+      "Role": "Consultant",
+      "Location": "Hyderabad"
+    },
+    {
+      "EmpId": "103",
+      "Name": "Smith",
+      "Role": "Architect",
+      "Location": "Pune"
+    }
+  ]
+}
