@@ -1,0 +1,32 @@
+<mvc:View
+    controllerName="localization.localization.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+
+        <pages>
+
+            <Page title="{i18n>appTitle}">
+
+                <content>
+
+                    <VBox class="sapUiSmallMargin">
+
+                        <Text text="{i18n>helloText}" />
+
+                        <Button
+                            text="{i18n>buttonText}"
+                            press="onPress" />
+
+                    </VBox>
+
+                </content>
+
+            </Page>
+
+        </pages>
+
+    </App>
+
+</mvc:View>
