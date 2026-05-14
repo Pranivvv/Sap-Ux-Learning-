@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="navigation.navigation.controller.Second"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Second Page">
+
+        <content>
+
+            <VBox class="sapUiSmallMargin">
+
+                <Text text="Welcome to Second Page" />
+
+                <Button
+                    text="Go To Third Page"
+                    press="onNext" />
+
+                <Button
+                    text="Back To Home"
+                    press="onBack" />
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

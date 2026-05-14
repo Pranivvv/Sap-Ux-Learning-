@@ -1,98 +1,119 @@
 {
-  "_version": "1.84.0",
-  "sap.app": {
-    "id": "navigation.navigation",
-    "type": "application",
-    "i18n": "i18n/i18n.properties",
-    "applicationVersion": {
-      "version": "0.0.1"
-    },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}",
-    "resources": "resources.json",
-    "sourceTemplate": {
-      "id": "@sap/generator-fiori:basic",
-      "version": "1.24.0",
-      "toolsId": "959b2e2d-284b-4b2c-8fba-0f232d555d2b"
-    }
-  },
-  "sap.ui": {
-    "technology": "UI5",
-    "icons": {
-      "icon": "",
-      "favIcon": "",
-      "phone": "",
-      "phone@2": "",
-      "tablet": "",
-      "tablet@2": ""
-    },
-    "deviceTypes": {
-      "desktop": true,
-      "tablet": true,
-      "phone": true
-    }
-  },
-  "sap.ui5": {
-    "flexEnabled": true,
-    "dependencies": {
-      "minUI5Version": "1.147.2",
-      "libs": {
-        "sap.m": {},
-        "sap.ui.core": {}
-      }
-    },
-    "contentDensities": {
-      "compact": true,
-      "cozy": true
-    },
-    "models": {
-      "i18n": {
-        "type": "sap.ui.model.resource.ResourceModel",
-        "settings": {
-          "bundleName": "navigation.navigation.i18n.i18n"
-        }
-      }
-    },
-    "resources": {
-      "css": [
-        {
-          "uri": "css/style.css"
-        }
-      ]
-    },
-    "routing": {
-      "config": {
-        "routerClass": "sap.m.routing.Router",
-        "controlAggregation": "pages",
-        "controlId": "app",
-        "transition": "slide",
-        "type": "View",
-        "viewType": "XML",
-        "path": "navigation.navigation.view",
-        "async": true,
-        "viewPath": "navigation.navigation.view"
+    "_version": "1.84.0",
+    "sap.app": {
+      "id": "navigation.navigation",
+      "type": "application",
+      "i18n": "i18n/i18n.properties",
+      "applicationVersion": {
+        "version": "0.0.1"
       },
-      "routes": [
-        {
-          "name": "RouteView1",
-          "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
-        }
-      ],
-      "targets": {
-        "TargetView1": {
-          "id": "View1",
-          "name": "View1"
-        }
+      "title": "{{appTitle}}",
+      "description": "{{appDescription}}",
+      "resources": "resources.json",
+      "sourceTemplate": {
+        "id": "@sap/generator-fiori:basic",
+        "version": "1.24.0",
+        "toolsId": "959b2e2d-284b-4b2c-8fba-0f232d555d2b"
       }
     },
-    "rootView": {
-      "viewName": "navigation.navigation.view.App",
-      "type": "XML",
-      "id": "App",
-      "async": true
+    "sap.ui": {
+      "technology": "UI5",
+      "icons": {
+        "icon": "",
+        "favIcon": "",
+        "phone": "",
+        "phone@2": "",
+        "tablet": "",
+        "tablet@2": ""
+      },
+      "deviceTypes": {
+        "desktop": true,
+        "tablet": true,
+        "phone": true
+      }
+    },
+    "sap.ui5": {
+      "flexEnabled": false,
+      "dependencies": {
+        "minUI5Version": "1.147.2",
+        "libs": {
+          "sap.m": {},
+          "sap.ui.core": {}
+        }
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      },
+      "models": {
+        "i18n": {
+          "type": "sap.ui.model.resource.ResourceModel",
+          "settings": {
+            "bundleName": "navigation.navigation.i18n.i18n"
+          }
+        }
+      },
+      "resources": {
+        "css": [
+          {
+            "uri": "css/style.css"
+          }
+        ]
+      },
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "controlAggregation": "pages",
+          "controlId": "app",
+          "transition": "slide",
+          "type": "View",
+          "viewType": "XML",
+          "path": "navigation.navigation.view",
+          "async": true,
+          "viewPath": "navigation.navigation.view"
+        },
+        "routes": [
+          {
+                      "pattern": "",
+                      "name": "home",
+                      "target": "home"
+                  },
+
+                  {
+                      "pattern": "second",
+                      "name": "second",
+                      "target": "second"
+                  },
+
+                  {
+                      "pattern": "third",
+                      "name": "third",
+                      "target": "third"
+                  }
+
+        ],
+        "targets": {
+
+                "home": {
+                    "viewName": "Home"
+                },
+
+                "second": {
+                    "viewName": "Second"
+                },
+
+                "third": {
+                    "viewName": "Third"
+                }
+
+            }
+
+      },
+      "rootView": {
+        "viewName": "navigation.navigation.view.App",
+        "type": "XML",
+        "id": "App",
+        "async": true
+      }
     }
-  }
 }
