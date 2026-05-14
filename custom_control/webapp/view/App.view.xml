@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="customcontrol.customcontrol.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="customcontrol.customcontrol.control">
+
+    <App>
+
+        <pages>
+
+            <Page title="SAPUI5 Custom Control">
+
+                <content>
+
+                    <VBox class="sapUiSmallMargin">
+
+                        <custom:MyText
+                            text="Hello from Custom Control" />
+
+                    </VBox>
+
+                </content>
+
+            </Page>
+
+        </pages>
+
+    </App>
+
+</mvc:View>
