@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <VBox class="sapUiSmallMargin">
+
+        <Text text="Reusable Fragment Content" />
+
+        <Button
+            text="Common Button"
+            press="onCommonPress" />
+
+    </VBox>
+
+</core:FragmentDefinition>
+

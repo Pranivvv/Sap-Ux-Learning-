@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName="fragmentreuse.fragmentreuse.controller.Second"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page title="Second Page">
+
+        <content>
+
+            <Text text="Second View" />
+
+            <core:Fragment
+                fragmentName="fragmentreuse.fragmentreuse.fragment.Common"
+                type="XML" />
+
+            <Button
+                text="Back To Home"
+                press="onBack" />
+
+        </content>
+
+    </Page>
+
+</mvc:View>
